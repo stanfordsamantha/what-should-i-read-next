@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="7"/>
+      <feColorMatrix values="0 0 0 0 0.16  0 0 0 0 0.07  0 0 0 0 0.02  0 0 0 0.55 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="fiber" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.6" numOctaves="2" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0.45  0 0 0 0 0.31  0 0 0 0 0.15  0 0 0 0.35 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <radialGradient id="vig" cx="50%" cy="48%" r="62%">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1E0C03" stop-opacity="0.55"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6DE9C"/>
+      <stop offset="0.5" stop-color="#E2BE6E"/>
+      <stop offset="1" stop-color="#B98E44"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="11" r="5.2" fill="#2A1206"/>
+    </pattern>
+  </defs>
+  <rect width="1024" height="1024" fill="#6A391B"/>
+  <rect width="1024" height="1024" fill="#6A391B" filter="url(#grain)"/>
+  <!-- faint handwriting lines -->
+  <g fill="none" stroke="#E9D3A4" stroke-opacity="0.07" stroke-width="5" stroke-linecap="round">
+    <path d="M140 300 q30 -26 60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0"/>
+    <path d="M110 720 q30 -26 60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0"/>
+    <path d="M160 800 q30 -26 60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0"/>
+  </g>
+  <!-- halftone disc -->
+  <circle cx="742" cy="330" r="190" fill="url(#dots)" opacity="0.32"/>
+  <!-- torn kraft strips -->
+  <path d="M0 0 H1024 V118 L995 107 L970 121 L936 113 L910 100 L886 98 L852 115 L821 123 L775 99 L746 114 L707 109 L677 122 L650 124 L625 106 L597 98 L555 123 L525 123 L495 104 L468 107 L437 118 L392 125 L359 100 L318 108 L275 110 L237 105 L210 105 L173 106 L149 124 L110 124 L79 98 L48 116 L4 126 L0 125 Z" fill="#C9A46A"/>
+  <path d="M0 0 H1024 V118 L995 107 L970 121 L936 113 L910 100 L886 98 L852 115 L821 123 L775 99 L746 114 L707 109 L677 122 L650 124 L625 106 L597 98 L555 123 L525 123 L495 104 L468 107 L437 118 L392 125 L359 100 L318 108 L275 110 L237 105 L210 105 L173 106 L149 124 L110 124 L79 98 L48 116 L4 126 L0 125 Z" fill="#C9A46A" filter="url(#fiber)"/>
+  <path d="M0 1024 H1024 V912 L988 923 L955 912 L929 909 L886 904 L854 920 L818 932 L777 906 L745 921 L704 926 L681 927 L647 909 L603 918 L558 917 L531 909 L502 905 L477 908 L439 931 L399 906 L353 926 L319 929 L274 932 L249 913 L221 925 L192 927 L157 932 L133 928 L103 910 L69 912 L37 929 L14 910 L0 932 Z" fill="#C9A46A"/>
+  <path d="M0 1024 H1024 V912 L988 923 L955 912 L929 909 L886 904 L854 920 L818 932 L777 906 L745 921 L704 926 L681 927 L647 909 L603 918 L558 917 L531 909 L502 905 L477 908 L439 931 L399 906 L353 926 L319 929 L274 932 L249 913 L221 925 L192 927 L157 932 L133 928 L103 910 L69 912 L37 929 L14 910 L0 932 Z" fill="#C9A46A" filter="url(#fiber)"/>
+  <rect width="1024" height="1024" fill="url(#vig)"/>
+  <!-- engraving frame -->
+  <rect x="196" y="196" width="632" height="632" fill="#5A2F15" fill-opacity="0.55"/>
+  <rect x="196" y="196" width="632" height="632" fill="none" stroke="url(#gold)" stroke-width="10"/>
+  <rect x="222" y="222" width="580" height="580" fill="none" stroke="url(#gold)" stroke-width="4"/>
+  <g fill="url(#gold)">
+    <circle cx="196" cy="196" r="14"/><circle cx="828" cy="196" r="14"/>
+    <circle cx="196" cy="828" r="14"/><circle cx="828" cy="828" r="14"/>
+  </g>
+  
+  <!-- open book -->
+  <g stroke="#B98E44" stroke-width="6" stroke-linejoin="round">
+    <path d="M512 430 C450 392 360 384 300 400 V640 C360 624 450 632 512 670 Z" fill="#F1E0B8"/>
+    <path d="M512 430 C574 392 664 384 724 400 V640 C664 624 574 632 512 670 Z" fill="#E8D2A2"/>
+  </g>
+  <g fill="none" stroke="#8C5C33" stroke-width="5" stroke-linecap="round" opacity="0.75">
+    <path d="M336 452 C384 442 432 446 478 464"/><path d="M336 494 C384 484 432 488 478 506"/>
+    <path d="M336 536 C384 526 432 530 478 548"/><path d="M336 578 C384 568 432 572 478 590"/>
+    <path d="M546 464 C592 446 640 442 688 452"/><path d="M546 506 C592 488 640 484 688 494"/>
+    <path d="M546 548 C592 530 640 526 688 536"/>
+  </g>
+  <path d="M512 430 V670" stroke="#8C5C33" stroke-width="6"/>
+  <!-- ribbon bookmark -->
+  <path d="M600 418 V560 L620 540 L640 560 V408" fill="#A3332A" stroke="#6E1E18" stroke-width="3"/>
+  <text x="512" y="372" text-anchor="middle" font-family="Didot, 'Bodoni 72', serif" font-size="96" fill="url(#gold)">&#x2766;</text>
+  <text x="512" y="752" text-anchor="middle" font-family="Didot, 'Bodoni 72', serif" font-style="italic" font-size="62" letter-spacing="4" fill="url(#gold)">read next</text>
+
+</svg>
